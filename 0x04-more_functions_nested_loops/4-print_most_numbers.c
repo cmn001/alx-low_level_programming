@@ -2,16 +2,16 @@
 
 /**
  * print_most_numbers - with exeption of 2 and 4
- * return:void
+ * return: the numbers from 0 upto 9
  */
 
 void print_most_numbers(void)
 {
-	char c;
+	int c = '0';
 
-	for (c = '0'; c <= '9'; c++)
+	for (; c <= '9'; c++)
 	{
-		if (!(c == 2 || c == 4))
+		if (c == 2 || c == 4)
 		{
 			continue;
 		}
@@ -19,6 +19,6 @@ void print_most_numbers(void)
 		{
 			_putchar(c + '0');
 	}
-	_putchar('\n');
 	}
+	_putchar('\n');
 }
