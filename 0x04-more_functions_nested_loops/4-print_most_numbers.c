@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_most_numbers - with exeption of 2 and 4
@@ -7,7 +8,7 @@
 
 void print_most_numbers(void)
 {
-	int c = '0';
+	int c = 0;
 
 	for (; c <= '9'; c++)
 	{
